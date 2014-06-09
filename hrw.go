@@ -1,6 +1,10 @@
 // Package hrw provides an implementation of Highest Random Weight hashing, an
 // alternative to consistent hashing which is both simple and fast.
 //
+// HRW allows you to consistently select the same nodes (or sets of nodes) for a
+// given key. When a node is removed from the set of available nodes, only the
+// data is was responsible for is at all affected.
+//
 // For more details on HRW hashing, see
 // http://www.eecs.umich.edu/techreports/cse/96/CSE-TR-316-96.pdf or
 // http://en.wikipedia.org/wiki/Rendezvous_hashing.
